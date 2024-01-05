@@ -42,7 +42,7 @@ const Animatedtext = ({text,className=""}) => {
                 variants={singleword}
                
                 >
-                    {word} &nbsp;
+                    {word}&nbsp;
                 </motion.span>
                 )
             }

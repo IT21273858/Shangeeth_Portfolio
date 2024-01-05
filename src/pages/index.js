@@ -22,11 +22,11 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0'>
           <div className='flex items-center justify-between w-full'>
-            <div className='w-1/2'>
-              <Image src={profilePic} alt="Shangeeth" className='w-full h-auto'/>
-            </div>
-            <div className='w-1/2 flex flex-col items-center self-center'>
-              <Animatedtext text="Designing &nbsp;Tomorrow's Technology Today" className='!text-5xl !text-left '/>
+            
+              <Image src={profilePic} alt="Shangeeth" className='w-3/4 h-auto'/>
+           
+            <div className=' flex flex-col items-center self-center'>
+              <Animatedtext text="Designing Tomorrow's Technology Today" className='!text-5xl !text-left'/>
               <p className='my-4 text-base font-medium'>
               A collection of my software engineering achievements.As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
               Explore my latest projects and articles, showcasing my expertise in React.js and web development.
