@@ -7,7 +7,8 @@ import Animatedtext from '@/components/Animatedtext'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icon'
 import HireMe from '@/components/HireMe'
-
+import Contact from '../../public/images/svgs/person.gif'
+import Hireme from '../../public/images/svgs/hireme.gif'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -37,12 +38,17 @@ export default function Home() {
                 </Link>
                 <Link href="mailto:vijayathas12shangeeth@gmail.com" 
                 className='ml-4 text-lg font-medium capitalize  text-dark underline'>
-                  Contact</Link>
+                  Contact</Link><Image src={Contact} alt='Think' className='w-20 h-20' />
               </div>
             </div>
           </div>
         </Layout>
         <HireMe/>
+        <div className='w-24 fixed right-4 bottom-4 top-[75%]
+    flex flex-col items-center justify-center overflow-hidden'>
+        <Image src={Hireme} alt='Think' className='w-full h-auto' />
+        </div>
+        
       </main>
     </>
   )
