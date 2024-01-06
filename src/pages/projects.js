@@ -5,29 +5,30 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import p1 from '../../public/images/projects/fmc.png'
 import fmc1 from '../../public/images/projects/fmc.png'
 import fmc2 from '../../public/images/projects/fmc2.png'
 import pn1 from '../../public/images/projects/plant nexus1.png'
 import pn2 from '../../public/images/projects/plant nexus2.png'
 import pc from '../../public/images/projects/procument3.png'
+import arti from '../../public/images/projects/Artista.png'
 import myVideo from '../../public/videos/final.mp4'
+
 const FeaturedProject = ({type,title,summary,img,link,github}) => {
     return (
         <article className='w-full flex items-center justify-between relative rounded-br-2xl
         rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10'>
-            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-cyan-600
-            rounded-br-3xl '/>
+            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-cyan-600 rounded-br-3xl '/>
             <Link href={link} target='_blank' 
             className=' w-1/2 cursor-pointer overflow-hidden rounded-lg'>
                 <Image src={img} alt={title} className='w-full h-auto'/>
             </Link>
             
             <div className=' w-1/2 flex flex-col items-start justify-between pl-6'>
-                <span className='text-primary font-medium text-xl'> {type} </span>
+                
                 <Link href={link} target='_blank' className=' hover:underline underline-offset-2'>
                 <h2 className=' my-2 w-full text-left text-4xl font-bold'> {title} </h2>
             </Link>
+            <span className='text-primary font-medium text-xl'> {type} </span>
             <p className=' my-2 font-medium text-dark '> {summary} </p>
             <div className=' mt-2 flex items-center'>
                 <Link href={github} target='_blank' className=' w-10'> <GithubIcon/> </Link>
@@ -39,22 +40,22 @@ const FeaturedProject = ({type,title,summary,img,link,github}) => {
     )
 }
 
-const Project = ({title,type,img,link,github,className}) =>{
+const Project = ({title,type,img,link,github}) =>{
     return(
         <article className=' w-full flex flex-col items-center rounded-2xl
          border border-solid border-dark bg-light p-10 relative'>
-            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-cyan-600
-            rounded-br-3xl '/>
+            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-cyan-600 rounded-br-3xl '/>
              <Link href={link} target='_blank' 
             className=' w-full cursor-pointer overflow-hidden rounded-lg'>
                 <Image src={img} alt={title} className='w-full h-auto' />
             </Link>
             
             <div className=' w-full flex flex-col items-start justify-between mt-4'>
-                <span className='text-primary font-medium text-xl'> {type} </span>
+                
                 <Link href={link} target='_blank' className=' hover:underline underline-offset-2'>
                 <h2 className=' my-2 w-full text-left text-3xl font-bold'> {title} </h2>
             </Link>
+            <span className='text-primary font-medium text-xl'> {type} </span>
             
             <div className=' w-full mt-2 flex items-center justify-between'>
             <Link href={link} target='_blank'
@@ -84,8 +85,7 @@ const projects = () => {
             
             <div className='grid grid-cols-12 gap-12 gap-y-20'>
                 <div className='col-span-12 px-20'>
-              <video controls autoPlay className='w-full' style={{borderRadius: '2rem',height: '90vh', 
-      objectFit: 'fill',}}>
+              <video controls autoPlay className='w-full' style={{borderRadius: '2rem',height: '90vh',objectFit: 'fill',}}>
                 <source src={myVideo} type='video/mp4' />
                 Your browser does not support the video tag.
               </video>
@@ -97,7 +97,7 @@ const projects = () => {
                     summary="Developed a comprehensive web application for efficient medication management and streamlined 
                     order processing for a medical clinic."
                     link="https://fmc-medi.vercel.app/"
-                    github="https://fmc-medi.vercel.app/"
+                    github="https://github.com/IT21273858/FMC.git"
                     type="NextJS, NodeJS, MongoDB, Tailwind"
                     />
                 </div>
@@ -108,18 +108,18 @@ const projects = () => {
                     summary="Developed a comprehensive web application for efficient medication management and streamlined 
                     order processing for a medical clinic."
                     link="https://fmc-medi.vercel.app/"
-                    github="https://fmc-medi.vercel.app/"
+                    github="https://github.com/IT21273858/FMC.git"
                     type="NextJS, NodeJS, MongoDB, Tailwind"
                     />
                 </div>
                 <div className='col-span-6'>
                 <Project
                     title="Virtual Dressing Room "
-                    img={p1}
+                    img={arti}
                     summary="Developed a comprehensive web application for efficient medication management and streamlined 
                     order processing for a medical clinic."
-                    link="https://fmc-medi.vercel.app/"
-                    github="https://fmc-medi.vercel.app/"
+                    link="https://github.com/IT21273858/Artista.git"
+                    github="https://github.com/IT21273858/Artista.git"
                     type="ReactJs, NodeJs, ThreeJs, WebXR, MongoDB, APIs"
                     />
                 </div>
