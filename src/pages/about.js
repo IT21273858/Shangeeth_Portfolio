@@ -39,7 +39,7 @@ const about = () => {
         <title>
             About Me
         </title>
-        <meta name="description" content="about my page"/>
+        <meta name="aboutme" content="about my page"/>
     </Head>
     <main className='flex w-full flex-col items-center justify-center'>
         <Layout className='pt-16'>

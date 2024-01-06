@@ -41,10 +41,7 @@ const NavBar = () => {
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className='w-6 mx-3'> <GithubIcon/> </motion.a>
-            <motion.a href={"/"} target='_blank'
-            whileHover={{y:-2}}
-            whileTap={{scale:0.9}}
-            className='w-6 mx-3' > <TwitterIcon/> </motion.a>
+           
             <motion.a href={"https://www.instagram.com/starshangeeth?igsh=MTNtb2YzaGp1aTk5aQ=="} target='_blank' 
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
@@ -52,7 +49,11 @@ const NavBar = () => {
             <motion.a href={"https://www.facebook.com/star.shangeeth.7?mibextid=ZbWKwL"} target='_blank' 
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
-            className='w-6 ml-3' > <FacebookIcon/> </motion.a>
+            className='w-6 mx-3' > <FacebookIcon/> </motion.a>
+             <motion.a href={"/"} target='_blank'
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className='w-6 ml-3' > <TwitterIcon/> </motion.a>
         </nav>
         <div className='absolute left-[50%] top-2 translate-x-[50%] '>
         <Logo/>
