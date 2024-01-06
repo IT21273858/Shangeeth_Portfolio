@@ -41,12 +41,12 @@ const about = () => {
         </title>
         <meta name="aboutme" content="about my page"/>
     </Head>
-    <main className='flex w-full flex-col items-center justify-center'>
+    <main className='flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
           <Animatedtext text="Tech Explorer on a Mission" className='mb-16 text-7xl' />
           <div className='grid w-full grid-cols-8 gap-16 p-12'>
             <div className='col-span-3 flex flex-col items-start justify-start'>
-              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
               <p className='font-medium'>
                 I'm Shangeeth, an aspiring software engineer pursuing a Bachelor's degree in Software Engineering at SLIIT.
                 My passion lies in crafting innovative digital experiences and leveraging technology to solve real-world problems.
@@ -61,9 +61,11 @@ const about = () => {
                 I've actively engaged in ensuring compliance with industry standards, building codes, and project specifications. Additionally, I hold a diploma in Cyber Security & Ethical Hacking, graduating with honors, showcasing my commitment to continuous learning and growth.
                 </p>
             </div>
-            <div className='col-span-3 flex items-center justify-center '>
-              <div className='relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 shadow-md'>
-                <Image src={profile} alt='Shangeeth' className='w-full h-auto rounded-2xl' />
+            <div className='col-span-3 flex items-center justify-center dark:bg-dark dark:border-light '>
+              <div className='relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 shadow-md dark:bg-light'>
+                <Image src={profile} alt='Shangeeth' className='w-full h-auto rounded-2xl'
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
             </div>
             <div className='col-span-2 flex flex-col items-end justify-between'>
@@ -71,19 +73,19 @@ const about = () => {
                 <span className='inline-block text-7xl font-bold'>
                    <AnimatedNumbers value={2}/>+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75'> Statisfied Clients</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'> Statisfied Clients</h2>
             </div>
             <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                     <AnimatedNumbers value={10}/>+
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75'> Completed Projects</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'> Completed Projects</h2>
             </div>
             <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                     <AnimatedNumbers value={1}/> +
                 </span>
-                <h2 className='text-xl font-medium capitalize text-dark/75'> Years of Expirence</h2>
+                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'> Years of Expirence</h2>
             </div>
             </div>
             

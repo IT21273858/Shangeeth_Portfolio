@@ -12,8 +12,8 @@ const Details = ({position,company,companylink,time,address,work}) => {
         transition={{duration:2,type:"spring"}}
 
         >
-            <h3 className=' capitalize font-bold text-2xl'>{position}&nbsp;<a target='_blank' href={companylink} className='text-primary capitalize '>@{company}</a> </h3>
-            <span className='capitalize font-medium text-dark/75 '>
+            <h3 className=' capitalize font-bold text-2xl'>{position}&nbsp;<a target='_blank' href={companylink} className='text-primary dark:text-primaryDark  capitalize '>@{company}</a> </h3>
+            <span className='capitalize font-medium text-dark/75 dark:text-light/75 '>
                 {time} | {address}
             </span>
             <p className=' font-medium w-full'>
@@ -38,7 +38,7 @@ const Expirence = () => {
         <div ref={ref} className='w-[75%] mx-auto relative '>
             <motion.div 
              style={{scaleY:scrollYProgress}}
-            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
+            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light'/>
 
            
 

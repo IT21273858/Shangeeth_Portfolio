@@ -18,26 +18,29 @@ const FramerImage = motion(Image)
 const FeaturedProject = ({type,title,summary,img,link,github}) => {
     return (
         <article className='w-full flex items-center justify-between relative rounded-br-2xl
-        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10'>
-            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-cyan-600 rounded-br-3xl '/>
+        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10 dark:bg-dark dark:border-light '>
+            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-cyan-600 rounded-br-3xl dark:bg-light '/>
             <Link href={link} target='_blank' 
             className=' w-1/2 cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt={title} className='w-full h-auto'
                 whileHover={{scale:1.05}}
-                transition={{duration:0.2}}/>
+                transition={{duration:0.2}}
+                priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
             </Link>
             
             <div className=' w-1/2 flex flex-col items-start justify-between pl-6'>
                 
                 <Link href={link} target='_blank' className=' hover:underline underline-offset-2'>
-                <h2 className=' my-2 w-full text-left text-4xl font-bold'> {title} </h2>
+                <h2 className=' my-2 w-full text-left text-4xl font-bold dark:text-light'> {title} </h2>
             </Link>
-            <span className='text-primary font-medium text-xl'> {type} </span>
-            <p className=' my-2 font-medium text-dark '> {summary} </p>
+            <span className='text-primary font-medium text-xl dark:text-primaryDark'> {type} </span>
+            <p className=' my-2 font-medium text-dark dark:text-light '> {summary} </p>
             <div className=' mt-2 flex items-center'>
                 <Link href={github} target='_blank' className=' w-10'> <GithubIcon/> </Link>
                 <Link href={link} target='_blank'
-                className=' ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'>Take a Look</Link>
+                className=' ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark'>Take a Look</Link>
             </div>
             </div>
         </article>
@@ -47,8 +50,9 @@ const FeaturedProject = ({type,title,summary,img,link,github}) => {
 const Project = ({title,type,img,link,github}) =>{
     return(
         <article className=' w-full flex flex-col items-center rounded-2xl
-         border border-solid border-dark bg-light p-10 relative'>
-            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-cyan-600 rounded-br-3xl '/>
+         border border-solid border-dark bg-light p-10 relative dark:bg-dark dark:border-light'>
+            <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-cyan-600 
+            rounded-br-3xl dark:bg-cyan-400  '/>
              <Link href={link} target='_blank' 
             className=' w-full cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt={title} className='w-full h-auto'
@@ -61,7 +65,7 @@ const Project = ({title,type,img,link,github}) =>{
                 <Link href={link} target='_blank' className=' hover:underline underline-offset-2'>
                 <h2 className=' my-2 w-full text-left text-3xl font-bold'> {title} </h2>
             </Link>
-            <span className='text-primary font-medium text-xl'> {type} </span>
+            <span className='text-primary font-medium text-xl dark:text-primaryDark'> {type} </span>
             
             <div className=' w-full mt-2 flex items-center justify-between'>
             <Link href={link} target='_blank'
@@ -84,7 +88,7 @@ const projects = () => {
         </title>
         <meta name="description" content="about my page"/>
     </Head>
-    <main className='w-full mb-16 flex flex-col items-center justify-center p-16'>
+    <main className='w-full mb-16 flex flex-col items-center justify-center p-16 dark:text-light'>
         <Layout className='pt-2'>
             <Animatedtext text="Innovative Solutions" className='text-5xl'/>
             <Animatedtext text="Tangible Results" className='font-medium  mb-5 '/>
