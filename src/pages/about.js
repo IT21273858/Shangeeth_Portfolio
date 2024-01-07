@@ -50,17 +50,17 @@ const about = () => {
             <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
               <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
               <p className='font-medium'>
-                I'm Shangeeth, an aspiring software engineer pursuing a Bachelor's degree in Software Engineering at SLIIT.
+                I&apos;m Shangeeth, an aspiring software engineer pursuing a Bachelor&apos;s degree in Software Engineering at SLIIT.
                 My passion lies in crafting innovative digital experiences and leveraging technology to solve real-world problems.
-                With a focus on design excellence and user-centered thinking, I'm committed to creating functional and intuitive solutions across websites, mobile apps, and digital products.
+                With a focus on design excellence and user-centered thinking, I&apos;m committed to creating functional and intuitive solutions across websites, mobile apps, and digital products.
               </p>
                 <p className='my-4 font-medium'>
                 My journey in software engineering spans a diverse range of programming languages and frameworks, including Kotlin, Java, ReactJS, NextJS, HTML5, PHP, and more.
-                Proficient in project management and fostering strong client relationships, I've honed my skills in areas like MVC architecture, Agile Scrum practices, and version control using Git.
+                Proficient in project management and fostering strong client relationships, I&apos;ve honed my skills in areas like MVC architecture, Agile Scrum practices, and version control using Git.
                 </p>
                 <p className='font-medium'>
                 My experience includes freelance work as a Website Developer and a role as a Project Manager, where I led teams to exceed project goals and timelines.
-                I've actively engaged in ensuring compliance with industry standards, building codes, and project specifications. Additionally, I hold a diploma in Cyber Security & Ethical Hacking, graduating with honors, showcasing my commitment to continuous learning and growth.
+                I&apos;ve actively engaged in ensuring compliance with industry standards, building codes, and project specifications. Additionally, I hold a diploma in Cyber Security & Ethical Hacking, graduating with honors, showcasing my commitment to continuous learning and growth.
                 </p>
             </div>
             <div className='col-span-3 flex items-center justify-center dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8'>
