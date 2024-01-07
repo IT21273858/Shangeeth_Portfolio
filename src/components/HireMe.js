@@ -5,8 +5,10 @@ import Link from 'next/link'
 const HireMe = () => {
   return (
     <div className='fixed left-4 bottom-4
-    flex flex-col items-center justify-center overflow-hidden'>
-        <div className=' w-48 h-auto flex items-center justify-center relative'>
+    flex flex-col items-center justify-center overflow-hidden
+    md:right-0 sm:right-0 sm:top-0 md:left-auto md:top-0 md:bottom-auto md:absolute'>
+        <div className=' w-48 h-auto flex items-center justify-center relative
+        md:w-22 '>
             <CircularText className={"fill-dark animate-spin-slow dark:fill-light"}/>
             <Link href="mailto:vijayathas12shangeeth@gmail.com" className='flex items-center justify-center
             absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark
@@ -15,6 +17,7 @@ const HireMe = () => {
 
              dark:bg-light dark:text-dark
                 hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                md:w-22 md:h-22 md:text-[10px]
               '
              >Hire Me</Link>
         </div>
