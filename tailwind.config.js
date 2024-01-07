@@ -30,6 +30,9 @@ module.exports = {
         circularDarkMd:"repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 6px,#1b1b1b 60px)",
         circularLightSm:"repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
         circularDarkSm:"repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 4px,#1b1b1b 40px)",
+        radialBg:"radial-gradient(circle, rgba(136,154,230,1) 0%, rgba(0,212,255,1) 62%, rgba(34,142,227,1) 86%)",
+        radialBg2:"radial-gradient(circle, rgba(7,158,176,1) 0%, rgba(0,3,96,1) 62%, rgba(78,0,113,1) 86%)",
+        radialBg3:"linear-gradient(90deg, rgba(7,158,176,0.10136554621848737) 0%, rgba(0,96,93,1) 62%, rgba(105,70,121,1) 86%)"
       }
     },
     screens:{

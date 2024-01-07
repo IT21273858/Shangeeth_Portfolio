@@ -13,6 +13,7 @@ import pc from '../../public/images/projects/procument3.png'
 import arti from '../../public/images/projects/Artista.png'
 import myVideo from '../../public/videos/final.mp4'
 import { motion } from 'framer-motion'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image)
 const FeaturedProject = ({type,title,summary,img,link,github}) => {
@@ -98,6 +99,7 @@ const projects = () => {
         </title>
         <meta name="description" content="about my page"/>
     </Head>
+    <TransitionEffect/>
     <main className='w-full mb-16 flex flex-col items-center justify-center p-16 dark:text-light sm:p-2'>
         <Layout className='pt-2'>
             <Animatedtext text="Innovative Solutions" className='text-5xl lg:!text-7xl sm:!text-6xl xs:!text-4xl '/>

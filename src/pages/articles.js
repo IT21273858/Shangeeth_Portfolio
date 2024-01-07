@@ -7,6 +7,7 @@ import React, { useRef } from 'react'
 import article1 from '../../public/images/articles/Virtual Dressing Room-master.jpg'
 import article2 from '../../public/images/articles/Virtual Dressing Room-master2.jpg'
 import { motion, useMotionValue } from 'framer-motion'
+import TransitionEffect from '@/components/TransitionEffect'
 
 
 const FramerImage = motion(Image)
@@ -89,6 +90,7 @@ const articles = () => {
         </title>
         <meta name="articles" content="articles published by me"/>
     </Head>
+    <TransitionEffect/>
     <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>
             <Animatedtext text="Ink in Pixels" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mt-5 md:mt-5'/>
