@@ -10,7 +10,7 @@ import HireMe from '@/components/HireMe'
 import Contact from '../../public/images/svgs/person.gif'
 import Hireme from '../../public/images/svgs/hireme.gif'
 import TransitionEffect from '@/components/TransitionEffect'
-import cv from '../../public/Shangeeth.pdf'
+import cv from '../../public/documents/Shangeeth.pdf'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

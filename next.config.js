@@ -8,7 +8,7 @@ const nextConfig = {
         loader: 'file-loader',
         options: {
           publicPath: '/_next',
-          name: 'static/media/[name].[hash].[ext]',
+          name: 'static/media/[name].[ext]',
         },
       },
     });
