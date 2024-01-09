@@ -51,7 +51,7 @@ export default function Home() {
                 </Link>
                 <Link href="mailto:vijayathas12shangeeth@gmail.com" 
                 className='ml-4 text-lg font-medium capitalize  text-dark underline dark:text-light md:text-base'>
-                  Contact</Link><Image src={Contact} alt='Think' className='w-20 h-20 dark:bg-light dark:rounded-full' />
+                  Contact</Link><Image src={Contact} alt='Think' width={60} height={60} className='ml-1 bg-transparent dark:bg-gray-500    dark:rounded-full' />
               </div>
             </div>
           </div>
