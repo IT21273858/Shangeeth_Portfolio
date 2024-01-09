@@ -22,11 +22,11 @@ export default function Home() {
         
       </Head>
       <TransitionEffect/>
-      <main className='flex items-center text-dark w-full p-5 min-h-screen dark:text-light'>
+      <main className='flex items-center text-dark w-full p-2 min-h-screen dark:text-light'>
         <Layout className='pt-0 lg:pt-2 md:pt-12 sm:pt-2'>
           <div className='flex items-center justify-between w-full lg:pt-4  lg:flex-col'>
             <div className='w-full xl:w-full md:w-full' style={{ width: 'max-content' }}>
-            <Image src={profilePic} alt="Shangeeth" className='w-auto h-auto lg:hidden md:inline-block md:w-full'
+            <Image src={profilePic} alt="Shangeeth" className='w-[80vw] h-auto lg:hidden md:inline-block md:w-full'
               priority
               sizes="(max-width: 768px) 100vw, 
               (max-width: 1200px) 50vw, 50vw"
@@ -35,7 +35,7 @@ export default function Home() {
               
            
             <div className=' flex flex-col items-center self-center lg:w-full lg:text-center'>
-              <Animatedtext text="Designing Tomorrow's Technology Today" className='!text-6xl !text-left
+              <Animatedtext text="Designing Tomorrow's Technology Today" className='!text-5xl !text-left
               xl:!text-5xl lg:!text-center lg:!text-5xl sm:!text-3xl '/>
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
               A collection of my software engineering achievements.As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
