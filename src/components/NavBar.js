@@ -83,7 +83,7 @@ const NavBar = () => {
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className='w-6 mx-3' > <FacebookIcon/> </motion.a>
-             <motion.a href={"/"} target='_blank'
+             <motion.a href={"https://x.com/starshangeeth?t=mUCBkJ__bEHcNc9U4I0glQ&s=08"} target='_blank'
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className='w-6 ml-3' > <TwitterIcon/> </motion.a>
